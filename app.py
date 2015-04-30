@@ -26,7 +26,7 @@ def yahoo(ticker):
     buf = StringIO()
     f.to_csv(buf)
     response = buf.getvalue()
-    response = response.replace('\n', '<br>')
+    # response = response.replace('\n', '<br>')
 
     return response
 
